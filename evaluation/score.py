@@ -104,36 +104,39 @@ if __name__ == '__main__':
     del bts["Unnamed: 0"]
     del ats["Unnamed: 0"]
 
-    ###  Sign Test Result (n=437)
+    ###  Sign Test Result (n=874)
     print(result_bts = get_result(bts))
     print(result_ats = get_result(ats))
 
-    ### Absolute Score Result (n=437)
+    ### Absolute Score Result (n=874)
     print()
-    print("=== Absolute Score ===")
-    print(absolute_score(bts, "Ref"))
-    print(absolute_score(ats, "Ref"))
+    print("=== Absolute Score of Reference ===")
+    print('BTS: ', absolute_score(bts, "Ref"))
+    print('ATS', absolute_score(ats, "Ref"))
 
-    ### Sign Test Result (n=148)
+    ### Sign Test Result (n=184)
     bts_small = bts[bts["Error"] == "T"]
     ats_small = ats[ats["Error"] == "T"]
 
     print(result_bts_small = get_result(bts_small))
     print(result_ats_small = get_result(ats_small))
 
-    ### Absolute Score Result (n=148)
+    ### Absolute Score Result (n=184)
     print()
-    print("=== Absolute Score ===")
-    print(absolute_score(bts_small, "Ref"))
-    print(absolute_score(ats_small, "Ref"))    
+    print("=== Absolute Score of Reference ===")
+    print('BTS: ', absolute_score(bts_small, "Ref"))
+    print('ATS: ', absolute_score(ats_small, "Ref"))    
 
     ### Sacrebleu - BLEU, TER, chrF2 - BTS
+    bts_unique = bts[:437]  # drop duplicated items
+    ats_unique = bts[:437]
+
     print()
-    print("[BTS]\n", get_sacrebleu(bts), "MT_Y", "MT_Z")
+    print("[BTS]\n", get_sacrebleu(bts_unique), "MT_Y", "MT_Z")
 
     ### Sacrebleu - BLEU, TER, chrF2 - ATS
     print()
-    print("[ATS]\n", get_sacrebleu(ats), "MT_Y", "MT_Z")
+    print("[ATS]\n", get_sacrebleu(ats_unique), "MT_Y", "MT_Z")
 
     ### Google Translate
     df_gt = pd.read_csv(GOOGLE, sep="\t", encoding="utf-8")
