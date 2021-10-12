@@ -82,9 +82,9 @@ def get_sacrebleu(df:pd.DataFrame, mt1:str, mt2:str):
         chrf = sacrebleu.corpus_chrf(system, [reference])
         
         if system == hypothesis_y:
-            print("[MT_Y]")
+            print("[ {} ]".format(mt1))
         else:
-            print("[MT_Z]")
+            print("[ {} ]".format(mt2))
 
         score_dic['bleu'] = bleu.score
         score_dic['ter'] = ter.score
