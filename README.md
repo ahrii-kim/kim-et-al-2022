@@ -23,17 +23,16 @@ We propose that the low quality of the source test set of the news track at WMT 
    - Google Translate (as an additionally model)
  
 
-#### Paper
-Bibtex:
+### Paper Bibtex
 ```sh
    @article
 ```
  
  
- ### Contact
- For more questions, please contact the first author of the paper.
+### Contact
+For more questions, please contact the first author of the paper.
  
- ### License
+### License
  
   
   
