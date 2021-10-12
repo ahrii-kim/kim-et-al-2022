@@ -29,11 +29,16 @@ We propose that the low quality of the source test set of the news track at WMT 
 ```
  
  
-### Contact
+ 
+ 
+#### Contact
 For more questions, please contact the first author of the paper.
  
-### License
  
+ 
+#### License
+<img src="https://img.shields.io/bower/l/bootstrap" /></a>
+
   
   
 
