@@ -1,5 +1,6 @@
 import pandas as pd
 from sklearn.metrics import cohen_kappa_score
+import numpy as np
 
 GROUPS = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k"]
 
@@ -40,7 +41,7 @@ def final_IAA(df_dict:pd.DataFrame):
     return kappa_dict
 
 
-if __name == '__main__':
+if __name__ == '__main__':
     file_dicts = read_files()  # group, dfs
     
     print("Testing - Group A: ", individual_IAA(file_dicts, "a"))
@@ -50,3 +51,4 @@ if __name == '__main__':
     print("Avg= ", np.mean([score for _, score in kappa_dict.items()]))
     print("Min= ", np.min([score for _, score in kappa_dict.items()]))
     print("Max= ", np.max([score for _, score in kappa_dict.items()]))
+

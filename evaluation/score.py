@@ -4,10 +4,13 @@ from scipy.stats import binom_test
 from sklearn.metrics import cohen_kappa_score
 
 from ko_mecab import mecab
+import sacrebleu
 
 BTS = "../data/before_test_set.csv"
 ATS = "../data/after_test_set.csv"
 GOOGLE = "../data/scores_google.csv"
+TER_Y = "../data/score_y.csv"
+TER_Z = "../data/score_z.csv"
 
 
 def significance_test(df:pd.DataFrame, system:str):
@@ -61,12 +64,45 @@ def get_result(df:pd.DataFrame):
     return result
 
 
-if __name == '__main__':
+def get_sacrebleu(df:pd.DataFrame, mt1:str, mt2:str):
+    reference = df.Ref.tolist()
+    hypothesis_y = df[mt1].tolist()
+    hypothesis_z = df[mt2].tolist()
+
+    reference = [' '.join(mecab(s)).replace("▃", "").replace("  ", " ") for s in reference]
+    hypothesis_y = [' '.join(mecab(s)).replace("▃", "").replace("  ", " ") for s in hypothesis_y]
+    hypothesis_z = [' '.join(mecab(s)).replace("▃", "").replace("  ", " ") for s in hypothesis_z]
+
+    score_dic = {} 
+    for system in [hypothesis_y, hypothesis_z]:
+        
+        bleu = sacrebleu.corpus_bleu(system, [reference])
+        ter = sacrebleu.corpus_ter(system, [reference])
+        !--force
+        chrf = sacrebleu.corpus_chrf(system, [reference])
+        
+        if system == hypothesis_y:
+            print("[MT_Y]")
+        else:
+            print("[MT_Z]")
+
+        score_dic['bleu'] = bleu.score
+        score_dic['ter'] = ter.score
+        score_dic['chrf'] = chrf.score
+
+        print("BLEU: ", bleu.score)
+        print("TER: ", ter.score)
+        print("chrF", chrf.score)
+        print()
+        return score_dic 
+
+
+if __name__ == '__main__':
     bts = pd.read_csv(BTS, sep="\t", encoding="utf-8")
     ats = pd.read_csv(ATS, sep="\t", encoding="utf-8")
 
-    del before["Unnamed: 0"]
-    del after["Unnamed: 0"]
+    del bts["Unnamed: 0"]
+    del ats["Unnamed: 0"]
 
     ###  Sign Test Result (n=437)
     print(result_bts = get_result(bts))
@@ -90,3 +126,28 @@ if __name == '__main__':
     print("=== Absolute Score ===")
     print(absolute_score(bts_small, "Ref"))
     print(absolute_score(ats_small, "Ref"))    
+
+    ### Sacrebleu - BLEU, TER, chrF2 - BTS
+    print()
+    print("[BTS]\n", get_sacrebleu(bts), "MT_Y", "MT_Z")
+
+    ### Sacrebleu - BLEU, TER, chrF2 - ATS
+    print()
+    print("[ATS]\n", get_sacrebleu(ats), "MT_Y", "MT_Z")
+
+    ### Google Translate
+    df_gt = pd.read_csv(GOOGLE, sep="\t", encoding="utf-8")
+    del df_gt["Unnamed: 0"]
+
+    print()
+    print("[Google Translate (BTS & ATS)]\n", get_sacrebleu(df_gt), "Google Before", "Google After")
+
+    ### Qualitative Analysis with TER
+    mty = pd.read_csv(TER_Y, sep="\t", encoding="utf-8")
+    mtz = pd.read_csv(TER_Z, sep="\t", encoding="utf-8")
+
+    print("System Y:\n", mty[mty.TER >= 0.8])
+    print("System Z:\n", mtz[mtz.TER >= 0.8])
+
+    print(bts[bts["Segment ID"] == 346])
+    print(ats[ats["Segment ID"] == 346])
