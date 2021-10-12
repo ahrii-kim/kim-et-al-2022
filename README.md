@@ -10,7 +10,7 @@ This repository provides codes and datasets for the NMT evaluation for the follo
 We propose that the low quality of the source test set of the news track at WMT 2020 may lead to an overrated human parity claim. This is proved by performing a Relative Ranking human evaluation which is later analyzed by Significance Test and Absolute Ranking scores. We report that:
    - About 5% of the segments that have previously achieved a human parity claim turn out to be statistically invalid.
    - The proportion reaches up to 7% when the "contaminated" sentences are solely computed.
-   - The absolute ranking score drops in all models.
+   - The absolute ranking score drops in all MT models while .
 
 
 ### Dataset
@@ -21,14 +21,15 @@ We propose that the low quality of the source test set of the news track at WMT 
 - Comparison: 
    - before-test-set (BTS) vs. after-test-set (ATS)
    - Human Translation(HT) vs. MT_Y vs. MT_Z
-   - Google Translate (as an additionally model)
+   - Google Translate (as a benchmark model)
  
 
 ### Paper 
 
 #### Bibtex
 ```sh
-   @article
+   @article{
+   }
 ```
 
  
