@@ -28,10 +28,15 @@ We propose that the low quality of the source test set of the news track at WMT 
 
 ### Paper 
 
-#### Bibtex
+#### Bibtex (preprinted ver.)
 ```sh
-   @article{
-   }
+   @Article{ahrii-2021-testset,
+  author =       "Ahrii Kim and Yunju Bak and Jimin Sun and Sungwon Lyu and Changmin Lee",
+  title =        "The Suboptimal WMT Test Sets and Their Impact on Human Parity",
+  journal =      "Preprints",
+  year =         "2021",
+  doi = "10.20944/preprints202110.0199.v1"
+  }
 ```
 
  
