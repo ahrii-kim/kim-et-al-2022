@@ -24,14 +24,28 @@ We propose that the low quality of the source test set of the news track at WMT 
    - before-test-set (BTS) vs. after-test-set (ATS)
    - Human Translation(HT) vs. MT_Y vs. MT_Z
    - Google Translate (as a benchmark model)
- 
+
+### Code
+```
+# install packages 
+## refered in requirements.txt
+
+# run main score code
+cd evalutation
+python score.py > out.txt
+```
 
 ### Paper 
 
-#### Bibtex
+#### Bibtex ([preprinted ver.](https://www.preprints.org/manuscript/202110.0199/v1))
 ```sh
-   @article{
-   }
+  @article{kim-et-al-21-testset,
+  author =       "Ahrii Kim and Yunju Bak and Jimin Sun and Sungwon Lyu and Changmin Lee",
+  title =        "The Suboptimal WMT Test Sets and Their Impact on Human Parity",
+  journal =      "Preprints",
+  year =         "2021",
+  doi = "10.20944/preprints202110.0199.v1"
+  }
 ```
 
  

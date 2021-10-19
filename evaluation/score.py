@@ -8,7 +8,7 @@ import sacrebleu
 
 BTS = "../data/before_test_set.csv"
 ATS = "../data/after_test_set.csv"
-GOOGLE = "../data/scores_google.csv"
+GOOGLE = "../data/score_google.csv"
 TER_Y = "../data/score_y.csv"
 TER_Z = "../data/score_z.csv"
 
@@ -76,9 +76,8 @@ def get_sacrebleu(df:pd.DataFrame, mt1:str, mt2:str):
     score_dic = {} 
     for system in [hypothesis_y, hypothesis_z]:
         
-        bleu = sacrebleu.corpus_bleu(system, [reference])
+        bleu = sacrebleu.corpus_bleu(system, [reference], force=True)
         ter = sacrebleu.corpus_ter(system, [reference])
-        !--force
         chrf = sacrebleu.corpus_chrf(system, [reference])
         
         if system == hypothesis_y:
@@ -94,7 +93,6 @@ def get_sacrebleu(df:pd.DataFrame, mt1:str, mt2:str):
         print("TER: ", ter.score)
         print("chrF", chrf.score)
         print()
-        return score_dic 
 
 
 if __name__ == '__main__':
@@ -105,21 +103,24 @@ if __name__ == '__main__':
     del ats["Unnamed: 0"]
 
     ###  Sign Test Result (n=874)
-    print(result_bts = get_result(bts))
-    print(result_ats = get_result(ats))
+    print("=== Sign Test Result (n=874) ===")
+    print(f'result_bts:\n {get_result(bts)}')
+    print(f'result_ats:\n {get_result(ats)}')
 
     ### Absolute Score Result (n=874)
     print()
     print("=== Absolute Score of Reference ===")
     print('BTS: ', absolute_score(bts, "Ref"))
-    print('ATS', absolute_score(ats, "Ref"))
+    print('ATS: ', absolute_score(ats, "Ref"))
 
     ### Sign Test Result (n=184)
     bts_small = bts[bts["Error"] == "T"]
     ats_small = ats[ats["Error"] == "T"]
-
-    print(result_bts_small = get_result(bts_small))
-    print(result_ats_small = get_result(ats_small))
+    
+    print()
+    print("=== Sign Test Result (n=184) ===")
+    print(f'result_bts_small:\n {get_result(bts_small)}')
+    print(f'result_ats_small:\n {get_result(ats_small)}')
 
     ### Absolute Score Result (n=184)
     print()
@@ -128,29 +129,36 @@ if __name__ == '__main__':
     print('ATS: ', absolute_score(ats_small, "Ref"))    
 
     ### Sacrebleu - BLEU, TER, chrF2 - BTS
-    bts_unique = bts[:437]  # drop duplicated items
-    ats_unique = bts[:437]
+    bts_unique = bts[:437]  # drop duplicated items (2 raters -> take half)
+    ats_unique = ats[:437]
 
     print()
-    print("[BTS]\n", get_sacrebleu(bts_unique), "MT_Y", "MT_Z")
+    print("=== Automatic metrics (BTS) ===")
+    get_sacrebleu(bts_unique, "MT_Y", "MT_Z")
+    # print("[BTS]\n", get_sacrebleu(bts_unique, "MT_Y", "MT_Z"))
 
     ### Sacrebleu - BLEU, TER, chrF2 - ATS
     print()
-    print("[ATS]\n", get_sacrebleu(ats_unique), "MT_Y", "MT_Z")
+    print("=== Automatic metrics (ATS) ===")
+    get_sacrebleu(ats_unique, "MT_Y", "MT_Z")
 
     ### Google Translate
     df_gt = pd.read_csv(GOOGLE, sep="\t", encoding="utf-8")
     del df_gt["Unnamed: 0"]
 
     print()
-    print("[Google Translate (BTS & ATS)]\n", get_sacrebleu(df_gt), "Google Before", "Google After")
+    print("=== Automatic metrics (Google) ===")
+    get_sacrebleu(df_gt, "Google Before", "Google After")
 
     ### Qualitative Analysis with TER
+    print()
+    print("=== Qualitative Analysis ===")
     mty = pd.read_csv(TER_Y, sep="\t", encoding="utf-8")
     mtz = pd.read_csv(TER_Z, sep="\t", encoding="utf-8")
 
     print("System Y:\n", mty[mty.TER >= 0.8])
     print("System Z:\n", mtz[mtz.TER >= 0.8])
-
+    
+    print()
     print(bts[bts["Segment ID"] == 346])
     print(ats[ats["Segment ID"] == 346])

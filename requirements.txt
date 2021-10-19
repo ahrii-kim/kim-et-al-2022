@@ -3,3 +3,8 @@
 # python3 -m pip install --upgrade pip
 # python3 -m pip install konlpy
 # pip install tweepy==3.8
+
+# Install Mecab ko, python wrapper, mecab-ko-dic
+# https://bitbucket.org/eunjeon/mecab-ko/src/master/README.md
+# https://bitbucket.org/eunjeon/mecab-python-0.996/src/master/README.md
+# https://bitbucket.org/eunjeon/mecab-ko-dic/src/master/README.md
