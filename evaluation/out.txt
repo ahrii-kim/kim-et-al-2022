@@ -1,0 +1,99 @@
+=== Sign Test Result (n=874) ===
+result_bts:
+                   MT_Y         MT_Z
+MT_better          117          116
+HT_better          511          578
+Tie                246          180
+P-value    9.82059e-42  1.36755e-57
+Valid             True         True
+Ab_score       2.22082      2.08009
+result_ats:
+                   MT_Y         MT_Z
+MT_better          115           89
+HT_better          538          625
+Tie                221          160
+P-value    6.70686e-48  1.76826e-78
+Valid             True         True
+Ab_score       2.18764      1.97254
+
+=== Absolute Score of Reference ===
+BTS:  {'Ref': (2.776887871853547, 722, 109, 43)}
+ATS:  {'Ref': (2.8020594965675056, 737, 101, 36)}
+
+=== Sign Test Result (n=184) ===
+result_bts_small:
+                   MT_Y         MT_Z
+MT_better           38           32
+HT_better          106          116
+Tie                 40           36
+P-value    5.90386e-07  4.72056e-10
+Valid             True         True
+Ab_score       2.20652      2.13587
+result_ats_small:
+                   MT_Y         MT_Z
+MT_better           30           20
+HT_better          112          128
+Tie                 42           36
+P-value    1.25995e-09  3.97337e-16
+Valid             True         True
+Ab_score       2.19565      1.98913
+
+=== Absolute Score of Reference ===
+BTS:  {'Ref': (2.6847826086956523, 142, 26, 16)}
+ATS:  {'Ref': (2.777173913043478, 150, 27, 7)}
+
+=== Automatic metrics (BTS) ===
+[ MT_Y ]
+BLEU:  19.785266218415302
+TER:  0.6547766323024055
+chrF 0.2707334386314116
+
+[ MT_Z ]
+BLEU:  20.19309663896737
+TER:  0.6626804123711341
+chrF 0.26968267974474885
+
+
+=== Automatic metrics (ATS) ===
+[ MT_Y ]
+BLEU:  19.77921498933438
+TER:  0.6520962199312714
+chrF 0.271264889552056
+
+[ MT_Z ]
+BLEU:  20.241028636714525
+TER:  0.6623367697594502
+chrF 0.2709943645290349
+
+
+=== Automatic metrics (Google) ===
+[ Google Before ]
+BLEU:  13.117676138341224
+TER:  0.7595189003436427
+chrF 0.19496856536087329
+
+[ Google After ]
+BLEU:  9.492515518561063
+TER:  0.8156701030927835
+chrF 0.1588497884299075
+
+
+=== Qualitative Analysis ===
+System Y:
+      Unnamed: 0  Segment ID                                      Before_tokens                                      After_tokens     TER
+225         225         226  " 만약 내 가 당신 을 위해 하 는 일 을 계속 하 려고 한다면 , 나 는 나 자...                내 가 널 위해 계속 노력 한다면 나 자신 을 해칠 거 야 .  1.0714
+298         298         299  " 주립 대학 노동자 들 " 이 가장 압박 하 는 불만 사항 은 낮 은 임금 과 직...  주립 대 근로자 들 의 가장 큰 불만 은 저 임금 과 직장 의 품위 저하 에 있 다 .  0.8000
+System Z:
+      Unnamed: 0  Segment ID                                      Before_tokens                                      After_tokens     TER
+345         345         346  일 하 는 엄마 로서 아기 와 함께 여행 하 는 것 , 세상 에 , 정말 많 은 일...  일 하 는 엄마 로서 아기 와 함께 여행 하 는 것 도 좋 지만 , 정말 신 나 . "  0.8571
+
+     Segment ID                                     Source Segment  ... MT_Y_rating  Error
+345         346  Being a working mum and travelling as well wit...  ...           2      T
+782         346  Being a working mum and travelling as well wit...  ...           2      T
+
+[2 rows x 9 columns]
+     Segment ID                                     Source Segment  ... MT_Y_rating  Error
+345         346  Being a working mum and travelling as well wit...  ...           1      T
+782         346  Being a working mum and travelling as well wit...  ...           2      T
+
+[2 rows x 9 columns]
