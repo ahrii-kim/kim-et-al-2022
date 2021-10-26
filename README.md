@@ -26,7 +26,7 @@ We propose that the low quality of the source test set of the news track at WMT 
    - Google Translate (as a benchmark model)
 
 ### Code
-```
+```sh
 # install packages 
 ## refered in requirements.txt
 
