@@ -1,0 +1,115 @@
+	Source Segment	Segment Origin	Ref_rating	MT_Z_rating	MT_Y_rating
+0	HSBC flips crime-spotting tool to scope new business	b	1	3	2
+1	British bank HSBC (HSBA.L) has converted a financial crime-spotting algorithm it was forced to build in the wake of a money-laundering scandal into one that can scope out new business opportunities, bank executives said.	b	1	1	2
+2	"The system combines data on clients"" banking activities, with public data on company ownership and directorships, to flag desirable potential clients to HSBC staff and offer ways to connect to them through existing relationships."	b	1	2	1
+3	Using data and artificial intelligence to try and boost revenues is part of HSBC's broader push to squeeze more out of its large physical network and client data, a key priority for interim Chief Executive Noel Quinn.	b	1	2	1
+4	"""It's one of the first commercial uses of investment in financial crime prevention, and the business we're getting in this way is inherently lower risk and quicker to win,"" said Stuart Nivison, HSBC's global head of client network banking."	b	1	1	1
+5	"HSBC declined to comment on how much it expects to make from the new system but said the broader ""network income"" initiative has already yielded hundreds of millions of dollars in additional revenue."	b	1	2	2
+6	The drive is an important part of the bank's efforts to defend its global presence at a time when some analysts and investors are saying it should shrink or exit markets like the United States where it makes returns below its cost of capital.	b	1	2	1
+7	HSBC was forced to invest hundreds of millions of dollars in financial crime compliance as part of a $1.9 billion settlement in 2012 with U.S. authorities over the bank's failure to prevent money laundering by drug cartels though its Mexican unit.	b	1	2	3
+8	"The system works by mapping individual customers"" and companies ties to each other and then looking for unusual patterns of transactions or unearthing previously unknown connections between those entities."	b	1	2	1
+9	That system has already freed up more than 400 staff to go from manually checking transactions and records to client-facing roles where they can spend time helping customers, said Adrian Rigby, chief operating officer of HSBC's trade business.	b	1	1	1
+10	"HSBC's Nivison said the lightbulb moment was realizing the tool could be repurposed to look for ""green flags"" of attractive potential clients rather than ""red flags"" of wrongdoing."	b	1	3	2
+11	"""We took our customer dataset and combined it with (Britain's) Companies House data and turned the algorithm around to look for attractiveness in a client, whether that be through sector, growth of the company, and connection to existing clients,"" Nivison said."	b	1	2	3
+12	The tool has mapped 22.5 million entities and people in Britain, and can identify in three minutes a network of connections that a staff member would have taken three hours to map out manually, he said.	b	1	3	2
+13	Cleveland police branded 'failing' in all areas by inspectors	a	1	2	3
+14	"Scandal-hit Cleveland police has become the first force to be branded ""failing"" in all areas by inspectors."	a	1	2	3
+15	It has been rated inadequate overall and in three key areas by Her Majesty's Inspectorate of Constabulary and Fire and Rescue Services (HMICFRS), which scrutinised its ability to reduce crime and keep people safe, operate efficiently, as well as the way it treats the public and its workforce.	a	1	2	1
+16	"The findings mean the force is effectively plunged into special measures, where the chief constable and police and crime commissioner are called before a national board and questioned about their plans to ensure ""critical improvements"" are made."	a	1	3	2
+17	The home secretary could then step in to tackle the problem if no progress is made.	a	2	3	1
+18	A string of scandals has plagued the force, covering Hartlepool, Redcar and Cleveland, Stockton and Middlesbrough in the north east of England.	a	1	3	2
+19	It has seen six chief constables in almost as many years.	a	1	2	1
+20	"Former chief constable Sean Price was sacked for gross misconduct in 2012; seven officers were under investigation after journalists"" phones were unlawfully monitored, and there have been long-standing claims of racism within the ranks."	a	1	2	3
+21	"Work practices were recently described by the chief inspector of constabulary as being about as ""inefficient as you can possibly imagine,"" with officers having to share laptops and bodyworn cameras."	a	1	3	2
+22	"HM Inspector of Constabulary Phil Gormley said it was a ""failing force"" where there had been ""significant"" deterioration in the last two years."	a	1	3	2
+23	"Tees Valley mayor Ben Houchen said the report described the ""worst findings ever into any police force in the country"" which was ""finally the official validation"" that the force is ""broken"" and said the Home Office needed to intervene now."	a	1	3	2
+24	"He added: ""It's no longer in dispute."	a	2	3	1
+25	"It is a fact described in black and white in this report."""	a	1	2	2
+26	The findings are some of the most distressing and shocking I have ever read.	a	1	2	1
+27	Cleveland is one of 15 forces that has been recently inspected by HMICFRS inspectors, and the only one rated inadequate in all areas.	a	1	2	2
+28	"Gormley added: ""The force doesn't appropriately prioritise crime prevention."	a	1	2	3
+29	There is a lack of strategic direction, and the force doesn't allocate enough resources to prevention work …	a	1	3	2
+30	It is failing to respond appropriately to vulnerable people, including children.	a	1	1	1
+31	"It is missing opportunities to safeguard them and exposing them to risk."""	a	1	2	1
+32	"He said senior leaders were not consistently demonstrating ""ethical behaviour,"" and the ""inappropriate behaviour of senior leaders within Cleveland is so profound that it is affecting the efficiency and effectiveness of the force."""	a	1	2	2
+33	"He added: ""It doesn't consistently treat its workforce with fairness and respect and it doesn't effectively communicate with or engage its workforce; its processes aren't perceived to be fair and it doesn't understand its workforce well enough to support them."""	a	1	3	2
+34	Despite the findings, the force did receive a small amount of praise for the way it tackles serious and organised crime but was told it must improve the way it investigates crimes.	a	1	3	2
+35	"The force's police and crime commissioner Barry Coppinger said: ""I am deeply concerned at the worrying contents of this report.”"	a	1	3	2
+36	The force's recent performance is simply not good enough.	a	1	3	2
+37	"He said he had received assurances from the current chief constable Richard Lewis that ""swift action"" was taken as soon as he became aware of the failings."	a	1	3	2
+38	Coppinger has been ordered by the Home Office to respond to the report within 56 days.	a	2	1	2
+39	"Lewis said the report would act ""as a line in the sand"" for the force, adding: ""Improvements have already been made and I take full responsibility for driving through the changes that are so obviously needed."	a	1	3	2
+40	"In the five months I've been here I have met some exceptional police officers and staff, at all levels, and have seen lives saved and vulnerable people protected by the efforts and determination of frontline officers."""	a	1	1	2
+41	If drastic improvements are not made quickly enough, the Government could step in, as it can when prisons are failing.	a	1	2	3
+42	But so far politicians have never had to resort to this measure with police forces, inspectors said.	a	3	2	1
+43	"Kit Malthouse, minister for crime, policing and fire, said he welcomed the chief constable's ""swift action to address these failings and will be monitoring the position closely,"" adding: ""Transparency and accountability are vital for public trust in policing.”"	a	1	2	3
+44	David Attenborough working on new documentary about animals and colour	b	1	2	1
+45	David Attenborough is 93-years-old but the iconic nature guru is not slowing down just yet.	b	1	3	2
+46	No, after the success of his groundbreaking Netflix documentary Our Planet, the much loved star is set to return with another series: Life In Colour.	b	1	2	3
+47	This time, the father-of-two will look at how animals use colour in their lives through high-tech cameras that were built especially for the programme.	b	1	2	2
+48	"The BBC have revealed that the star aims to show ""a world of colour normally invisible to human eyes"" - and it sounds truly fascinating."	b	1	1	1
+49	However, despite fans being eager for the upcoming release, it seems we all need to sit tight as it won't be dropping on our screens until 2021.	b	1	3	2
+50	But we're sure it'll be worth the wait.	b	1	1	1
+51	Earlier this month, David was presented with the TV Choice Lifetime Achievement Award, at the prestigious ceremony in London.	b	1	1	2
+52	The national treasure has entertained millions over his career, which has so far spanned 60 years.	b	1	3	2
+53	"When collecting his gong, the reporter enthused: ""Indeed."	b	1	3	2
+54	What I do isn't always entertaining, and sometimes people hear things they don't like!	b	1	2	3
+55	But this is an honour and a great pleasure.	b	2	1	1
+56	"TV Choice said of the winner: ""Still working, learning and making programmes Sir David Attenborough isn't just a British hero, he's a global icon."""	b	1	2	1
+57	This week, David was celebrated once again as a polar research ship was named after him.	b	1	2	1
+58	The star joined both Prince William and Kate for the naming ceremony in Cammell Laird shipyard in Birkenhead, Merseyside.	b	1	1	2
+59	"He said: ""It's no news to any of you that the world is facing great, great problems and the most aware of that are the young people of today, who will inherit this world."	b	1	1	2
+60	Great problems require great research and facts in order to solve them.	b	1	1	2
+61	"That's what this astonishing ship will be here to do, to find out the facts and find the science with which to deal with problems that are facing the world today and will increasingly do so tomorrow."""	b	1	2	1
+62	Life In Colour is expected to air on BBC Two in 2021, while it's said Netflix will retain global rights.	b	1	2	2
+63	Don't use my wife's name to score points, says husband of murdered MP Jo Cox	a	1	2	3
+64	The husband of Jo Cox said his wife's name must not be used to score political points after Jeremy Corbyn last night posted footage of the murdered MP to criticise Boris Johnson.	a	1	3	2
+65	"The Labour leader's film featured clips of Mrs Cox and a vigil held after her death, with the caption: ""Boris Johnson does not care about violence on our streets."""	a	1	2	1
+66	"Critics said Mr Corbyn was using her murder to score ""cheap political points"" while her husband Brendan Cox said the Labour leader was ""wrong"" to infer hateful language was a ""simple party political issue."""	a	1	3	2
+67	"Mr Cox said: ""Jeremy is right that the best way to honour Jo is to defeat hatred and division."	a	1	2	1
+68	He's also right the PM has a particular responsibility.”	a	1	2	3
+69	But he's wrong to infer this is a simple party political issue.	a	1	1	2
+70	Jo was passionately Labour but some things must transcend party politics.	a	1	2	3
+71	"He also shared a post which said Jo Cox's name was ""more than a political scoring point"" with the caption ""This. Thank you."""	a	1	3	2
+72	Mr Corbyn was facing a backlash for his video which opens with him talking about Mrs Cox's murder three years ago by a far-Right activist in her West Yorkshire constituency.	a	1	3	2
+73	"Speaking over a montage of clips of Mrs Cox, Mr Johnson and female MPs, Mr Corbyn said: ""This Prime Minister knows these words can promote violence and have real consequences."	a	1	3	2
+74	He wants division.	a	1	1	2
+75	"Clearly, he doesn't care about the violence on our streets."""	a	1	1	1
+76	He goes on to criticise Mr Johnson and call for a Labour government.	a	1	2	2
+77	"Mr Corbyn added: ""Many are deeply concerned about the language used by Boris Johnson, language which is being repeated by the far-Right."	a	1	2	3
+78	When this was raised with him by women MPs, who themselves face death threats, he arrogantly dismissed them.	a	1	3	2
+79	"It was nothing short of disgraceful."""	a	1	2	3
+80	"Former Labour MP John Woodcock shared the video and said: ""You can really shut up. Disgusting."""	a	1	2	2
+81	"Meanwhile Tory MP and business minister Nadhim Zahawi said: ""You are so wrong to use Jo Cox in this way, when her family have specifically asked for her not to be used in this way."	a	1	2	1
+82	To be kept out of politics.”	a	1	2	2
+83	If you have an ounce of decency Jeremy Corbyn you would take this video down.	a	1	3	2
+84	"It follows a row over language in Parliament this week in which Mr Johnson said that the ""best way"" to honour Mrs Cox was to ""get Brexit done."""	a	3	2	1
+85	"Her sister Kim Leadbeater called for a dialling down of extreme language saying it was ""not helpful to Jo's kids."""	a	2	1	3
+86	"She told ITV: ""For me to come out and say outrageous things about Boris Johnson — I just don't think that's a useful way of moving forward."	a	1	2	1
+87	"I can say what I think is right and what I think is wrong but I'm going to try and do that in a measured manner."""	a	1	2	1
+88	The daughter of Labour MP Yvette Cooper spoke out yesterday to say she constantly fears for her mother's life because of the way people speak about politicians.	a	1	2	3
+89	"The 12-year-old who ""silenced the world"""	a	1	1	1
+90	Greta Thunberg has established herself as the planet's spokeswoman on climate change at the tender age of 16.	a	1	1	2
+91	But long before social media, another teenager was scolding UN leaders on the world stage 27 years ago.	a	1	1	2
+92	"In the year since she organized school walkouts in her native Sweden to protest climate change, Greta Thunberg's environmental crusade has been unavoidable, culminating on Monday in an angry and passionate speech before the UN's Climate Action Summit, in which she lambasted politicians for stealing her ""dreams"" and her ""childhood"" with ""empty words"" while humanity stares down ""a mass extinction."""	a	1	2	3
+93	Thunberg's grim pronouncements have earned her savage criticism, and glowing praise.	a	1	3	2
+94	"New York Magazine called her ""the Joan of Arc of climate change,"" while The Guardian ranked her speech alongside President Lincoln's Gettysburg Address for its historical significance."	a	1	2	1
+95	Then again, they said the same about Severn Cullis-Suzuki in 1992.	a	1	1	1
+96	"Long before Thunberg deadpanned to parliamentarians that ""we probably don't even have a future any more,"" and netizens tore each other to shreds attacking and defending her, 12-year-old Cullis-Suzuki became known as the ""The girl who silenced the world for five minutes"" when she delivered a similar sermon before the UN Earth Summit in Rio de Janeiro."	a	1	3	2
+97	The tone of Cullis-Suzuki's speech is strikingly similar to Thunberg's.	a	1	2	1
+98	"We've come...to tell you adults that you must change your ways, she opened, just like Thunberg told the assembled adults ""we will not let you get away with this."""	a	1	3	2
+99	"Just as Thunberg told the UN summit ""we are in the beginning of a mass extinction and all you can talk about is the money and fairytales of eternal economic growth,"" Cullis-Suzuki told leaders that ""losing my future is not like losing an election or a few points on the stock market."""	a	1	2	1
+100	And underpinning both girls’ messages was a nihilistic fatalism.	a	1	1	1
+101	I am afraid to go out in the sun now because of the hole in our ozone.	a	1	1	2
+102	I am afraid to breathe the air because I don't know what chemicals are in it, Cullis-Suzuki said in 1992.	a	1	2	3
+103	"Striking schoolchildren in 2019 carry banners reading ""You'll die of old age, I'll die of climate change."""	a	1	2	1
+104	The environmental problems addressed by Cullis-Suzuki reflect the world of the early 1990s, when deforestation, the depletion of the ozone layer, and the extinction of species were the ecological concerns de jour.	a	1	1	2
+105	Yet humanity has been fairly successful at resolving those problems in the intervening years.	a	2	1	1
+106	Thanks to a landmark chemicals ban, ozone depletion has slowed dramatically, and forest cover worldwide has increased by an area the size of Texas and Alaska combined.	a	1	2	3
+107	Cullis-Suzuki herself went on to found an environmental think tank and work for UN Secretary General Kofi Annan's Special Advisory Panel in the early 2000s.	a	1	3	2
+108	So what does the future have in store for Thunberg?	a	1	1	1
+109	Well that depends how you look at Cullis-Suzuki's example.	a	1	1	2
+110	On one hand, none of her worst fears came to pass.	a	1	2	2
+111	On the other, world governments still have ecological problems to contend with, and are still being lectured by children about them.	a	1	3	2
+112	Assuming the world as we know it still exists 27 years from now — as Thunberg says it won't unless we slash carbon emissions to absolute zero in the next decade or so — then the teenage activist will likely look back on a long UN and NGO career that kicked off with one famous speech.	a	1	1	2
+113	By then, another concerned child will likely be delivering a passionate warning about acid rain in the Martian colonies.	a	1	3	2
