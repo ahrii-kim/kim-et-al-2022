@@ -24,10 +24,10 @@ We propose that the low quality of the source test set of the news track at WMT 
    - Google Translate (as a benchmark model)
 
 ### Code
-```sh
-# install packages 
-## refered in requirements.txt
 
+To install packages, please refer to `requirements.txt`
+
+```sh
 # run main score code
 cd evalutation
 python score.py > out.txt
