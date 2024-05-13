@@ -1,8 +1,6 @@
 # The Suboptimal WMT Test Sets and Their Impact on Human Parity
 <img src="https://img.shields.io/badge/Python-3766AB?style=flat-square&logo=Python&logoColor=white"/></a>
 <img src="https://img.shields.io/badge/Kakao-FFCD00?style=flat-square&logo=Kakao&logoColor=black"/></a>
-<img src="https://img.shields.io/apm/l/vim-mode"/></a>
-
                                                                                                
 
 This repository provides codes and datasets for the NMT evaluation for the following publication, "The Suboptimal WMT Test Sets and Their Impact on Human Parity" by Ahrii Kim, Yunju Bak, Jimin Sun, Sungwon Lyu, and Changmin Lee, submitted at [Preprints.org](https://www.preprints.org).
@@ -38,15 +36,15 @@ python score.py > out.txt
 ### Paper 
 
 #### Bibtex ([preprinted ver.](https://www.preprints.org/manuscript/202110.0199/v1))
-```sh
-  @article{kim-et-al-21-testset,
-  author =       "Ahrii Kim and Yunju Bak and Jimin Sun and Sungwon Lyu and Changmin Lee",
-  title =        "The Suboptimal WMT Test Sets and Their Impact on Human Parity",
-  journal =      "Preprints",
-  year =         "2021",
-  doi = "10.20944/preprints202110.0199.v1"
-  }
-```
+
+    @article{kim-et-al-21-testset,
+      author =       "Ahrii Kim and Yunju Bak and Jimin Sun and Sungwon Lyu and Changmin Lee",
+      title =        "The Suboptimal WMT Test Sets and Their Impact on Human Parity",
+      journal =      "Preprints",
+      year =         "2021",
+      doi = "10.20944/preprints202110.0199.v1"
+    }
+
 
  
 #### Contact
